@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-submission="email">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070a15">
+  <meta name="description" content="StyleWork 品牌时尚大片比赛，以 AI 影像呈现品牌风格。">
+  <title>品牌时尚大片比赛 | StyleWork</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+  <script src="submission.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="StyleWork 首页">Style<span>Work</span><i></i></a>
+      <nav class="navigation" aria-label="主导航">
+        <a href="#films">参考视频</a><a href="#tracks">创作方向</a><a href="#process">参赛流程</a><a href="#awards">奖项</a><a href="#submit">提交作品</a>
+      </nav>
+      <a class="header-link" href="#desktop">桌面端下载 <span aria-hidden="true">↓</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="品牌时尚大片比赛">
+      <div class="hero-stage" id="films">
+        <div class="slides" aria-label="参考视频轮播">
+          <video class="hero-video is-active" src="media/fashion-film-01.mp4" poster="media/fashion-film-01.jpg" muted playsinline preload="auto" aria-label="参考视频 01"></video>
+          <video class="hero-video" src="media/fashion-film-02.mp4" poster="media/fashion-film-02.jpg" muted playsinline preload="metadata" aria-label="参考视频 02" aria-hidden="true"></video>
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="hero-kicker"><span></span> STYLEWORK FASHION FILM CONTEST</p>
+          <h1>品牌时尚<br><strong>大片比赛</strong></h1>
+          <p class="hero-copy">驾驭 StyleWork AI，让时装风格成为全场焦点。<br>以一件成衣为起点，打造你的专属时尚影像大片。</p>
+          <div class="hero-actions"><a class="primary-button" href="#submit">提交参赛作品 <span aria-hidden="true">↗</span></a><a class="text-button" href="https://cloud.style3d.com/moda/agent-center/workbench?agentId=general" target="_blank" rel="noopener noreferrer">进入 StyleWork <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="container hero-bottom">
+          <div class="hero-facts"><div><span>参赛对象</span><strong>StyleWork 企业版用户</strong></div><div><span>活动时间 · 建议</span><strong>2026.11.10 — 12.05</strong></div></div>
+          <div class="carousel-controls" aria-label="视频轮播控制">
+            <span class="slide-count"><b id="slide-current">01</b><span> / </span>02</span>
+            <span class="progress-track"><span id="slide-progress"></span></span>
+            <button id="prev-film" class="icon-button" type="button" aria-label="上一个参考视频" title="上一个参考视频">←</button>
+            <button id="toggle-film" class="icon-button" type="button" aria-label="暂停视频" title="暂停视频">Ⅱ</button>
+            <button id="next-film" class="icon-button" type="button" aria-label="下一个参考视频" title="下一个参考视频">→</button>
+            <button id="toggle-sound" class="icon-button" type="button" aria-label="开启声音" aria-pressed="false" title="开启声音"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path class="sound-waves" d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/><path class="sound-muted" d="m16 9 5 6m0-6-5 6"/></svg></button>
+          </div>
+        </div>
+        <span class="film-caption"><span class="caption-dot"></span> 参考视频 <span id="film-number">01</span></span>
+      </div>
+      <div class="hero-end container"><span>BRAND IN MOTION</span><span>创意，让品牌被看见 <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <section class="section tracks-section" id="tracks">
+      <div class="container">
+        <div class="section-top"><span class="section-index">01 / 创作方向</span><p>THREE CREATIVE DIRECTIONS</p></div>
+        <div class="section-intro"><h2>每个品牌，<br>都有自己的<span>镜头语言。</span></h2><p>从单品细节到品牌叙事，选择一个创作方向，展现你的品牌风格。<strong class="creation-rule">视频长度不限，出图工具必须为 StyleWork。</strong>每支作品选择一个主要方向，同一团队可提交多个作品。</p></div>
+        <div class="track-list">
+          <article class="track"><div class="track-heading"><span>01</span><h3>单品主角</h3></div><p>聚焦一件品牌单品，以人物、动作和镜头展现廓形、材质与穿着质感。</p><span class="track-en">THE PRODUCT</span></article>
+          <article class="track"><div class="track-heading"><span>02</span><h3>风格穿搭</h3></div><p>从系列搭配出发，结合人物、场景与镜头语言，呈现品牌的生活方式。</p><span class="track-en">THE LOOK</span></article>
+          <article class="track"><div class="track-heading"><span>03</span><h3>品牌故事</h3></div><p>围绕品牌理念、系列主题或节日企划，以视觉叙事传递独特情绪。</p><span class="track-en">THE STORY</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-top"><span class="section-index">02 / 参赛流程</span><p>FROM IDEA TO SCREEN</p></div>
+        <div class="section-intro"><h2>从灵感，<br>到<span>你的大片。</span></h2><p>以 StyleWork 企业版用户身份参与，结合品牌素材与 AI 创作，让想法成为完整的视觉作品。</p></div>
+        <div class="steps">
+          <article class="step"><span>01</span><h3>确定命题</h3><p>选择方向，明确品牌、主推服装与创作主题。</p></article>
+          <article class="step"><span>02</span><h3>准备素材</h3><p>准备有权使用的服装图片、品牌元素及创意参考。</p></article>
+          <article class="step"><span>03</span><h3>创作大片</h3><p>出图必须使用 StyleWork，再结合视频生成与剪辑完成作品，视频长度不限。</p></article>
+          <article class="step"><span>04</span><h3>提交作品</h3><p>填写品牌和创作说明，生成投稿邮件，在邮箱中附上视频后发送。</p><a class="step-submit-link" href="#submit">前往提交 →</a></article>
+        </div>
+        <aside class="desktop-entry" id="desktop" aria-labelledby="desktop-title">
+          <div class="desktop-intro">
+            <span class="section-index">STYLEWORK DESKTOP</span>
+            <h3 id="desktop-title">把创作，带到桌面。</h3>
+            <p>下载 StyleWork 智能体桌面端，围绕本地品牌项目持续创作。</p>
+            <ul class="desktop-features"><li>本地工作区</li><li>本地产物保存</li><li>账号权益延续</li></ul>
+            <a class="text-button" href="https://cloud.style3d.com/moda/agent-center/workbench?agentId=general" target="_blank" rel="noopener noreferrer">直接进入网页工作台 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="desktop-downloads">
+            <h4>桌面端安装包</h4>
+            <div class="download-actions">
+              <a class="download-link" href="https://cloud.style3d.com/moda/agent-center/workbench?agentId=general" target="_blank" rel="noopener noreferrer" aria-label="macOS 下载入口，前往 StyleWork 工作台"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M12 16v5M8 21h8"/></svg><span><b>macOS 下载入口</b><small>Intel / M 系列芯片</small></span><span aria-hidden="true">↗</span></a>
+              <a class="download-link" href="https://cloud.style3d.com/moda/agent-center/workbench?agentId=general" target="_blank" rel="noopener noreferrer" aria-label="Windows 下载入口，前往 StyleWork 工作台"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="m3 5 7-1v7H3V5Zm10-1.5L21 2v9h-8V3.5ZM3 13h7v7l-7-1v-6Zm10 0h8v9l-8-1.5V13Z"/></svg><span><b>Windows 下载入口</b><small>Windows 版安装包</small></span><span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="download-guide">两个入口均打开网页工作台，按下方指引选择安装包。</p>
+          </div>
+          <section class="download-tutorial" aria-labelledby="download-tutorial-title">
+            <div class="tutorial-copy">
+              <span class="section-index">DOWNLOAD GUIDE</span>
+              <h4 id="download-tutorial-title">下载入口，在右上角。</h4>
+              <ol class="tutorial-steps">
+                <li><span>01</span><div><strong>打开 StyleWork 工作台</strong><p>点击上方入口；如提示登录，请先登录企业账号。</p></div></li>
+                <li class="tutorial-key-step"><span>02</span><div><strong>点击右上角「下载桌面版」</strong><p>找到带电脑图标的按钮，打开桌面端下载窗口。</p></div></li>
+                <li><span>03</span><div><strong>选择系统，下载安装包</strong><p>macOS 用户选择对应芯片版本；Windows 用户选择 Windows 版。</p></div></li>
+              </ol>
+            </div>
+            <figure class="download-location" aria-label="工作台入口位置示意：下载桌面版按钮位于页面右上角">
+              <div class="guide-window-bar"><span class="guide-window-dots" aria-hidden="true"><i></i><i></i><i></i></span><span>StyleWork · 网页工作台</span></div>
+              <div class="guide-workbench">
+                <div class="guide-toolbar"><span>通用专家 <span aria-hidden="true">⌄</span></span><span class="guide-download-target"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="13" rx="2"/><path d="M12 16v5M8 21h8"/></svg>下载桌面版</span></div>
+                <div class="guide-callout"><span aria-hidden="true">↑</span> 点击这里</div>
+                <div class="guide-workbench-body" aria-hidden="true"><div class="guide-spark">✦</div><strong>通用专家</strong><div class="guide-composer">和 StyleWork 一起创造点什么<span>＋<i>↑</i></span></div></div>
+              </div>
+              <figcaption>入口位置示意 · 在工作台右上角寻找高亮按钮</figcaption>
+            </figure>
+          </section>
+        </aside>
+        <div class="submission"><div><span class="section-index">作品提交</span><h3>让作品，<br>准备好被看见。</h3></div><div class="submission-list"><p><b>作品格式</b><span>视频长度不限，建议使用 MP4 格式，横竖屏均可，建议不低于 1080p。</span></p><p><b>出图工具</b><span>必须使用 StyleWork 完成出图。</span></p><p><b>提交材料</b><span>视频、1 张封面、100 字以内创意说明、1–3 张 StyleWork 创作过程截图。</span></p><p><b>素材使用</b><span>确保服装、人物、音乐等素材拥有相应使用权，展示范围以授权约定为准。</span></p></div></div>
+      </div>
+    </section>
+
+    <section class="section awards-section" id="awards">
+      <div class="container">
+        <div class="section-top"><span class="section-index">03 / 比赛奖励</span><p>CREATIVITY DESERVES REWARDS</p></div>
+        <div class="section-intro"><h2>好创意，<br>值得<span>一份好礼。</span></h2><p>让品牌风格成为焦点，赢取 Style3D 品牌礼品。前三名额外享有企业并发权益 30 天，让创作继续。</p></div>
+        <div class="prize-tiers">
+          <article class="prize-tier prize-tier-top" aria-labelledby="top-prize-title">
+            <div class="prize-tier-heading"><span class="prize-eyebrow">TOP 3</span><h3 id="top-prize-title">第 1–3 名</h3><p>丝巾 <span>＋</span> 包包</p></div>
+            <div class="prize-products">
+              <figure class="prize-product"><div class="prize-image prize-image-scarf"><img src="media/gifts/scarf-boxed-source.png" width="1024" height="1024" loading="lazy" alt="橙红色印花丝巾实拍"></div><figcaption><strong>印花丝巾</strong><span>橙红色印花图案</span></figcaption></figure>
+              <figure class="prize-product"><div class="prize-image prize-image-bag"><img src="media/gifts/bag.webp" width="360" height="325" loading="lazy" alt="Style3D 驼色条纹针织手提包"></div><figcaption><strong>品牌包包</strong><span>随身收纳，轻盈出行</span></figcaption></figure>
+            </div>
+            <div class="prize-benefit"><span class="prize-benefit-icon" aria-hidden="true">✦</span><span>额外创作权益<strong>企业并发权益</strong></span><b>30 <small>天</small></b></div>
+          </article>
+          <article class="prize-tier" aria-labelledby="finalist-prize-title">
+            <div class="prize-tier-heading"><span class="prize-eyebrow">TOP 4–10</span><h3 id="finalist-prize-title">第 4–10 名</h3><p>杯子 <span>＋</span> 小马挂件</p></div>
+            <div class="prize-products">
+              <figure class="prize-product"><div class="prize-image prize-image-cup"><img src="media/gifts/cup-source.png" width="1024" height="1024" loading="lazy" alt="Style3D 浅米色带盖杯实拍"></div><figcaption><strong>品牌杯子</strong><span>浅米色带盖设计</span></figcaption></figure>
+              <figure class="prize-product"><div class="prize-image prize-image-charm"><img src="media/gifts/horse-charm.webp" width="206" height="386" loading="lazy" alt="Style3D 米白与棕色小马挂件"></div><figcaption><strong>小马挂件</strong><span>把灵感挂在身边</span></figcaption></figure>
+            </div>
+            <div class="prize-tier-note"><span aria-hidden="true">✦</span><p>一份品牌心意，点亮创作日常。</p></div>
+          </article>
+        </div>
+        <details class="gift-packaging"><summary><span>礼品包装一览 <small>杯子与丝巾礼盒</small></span></summary><div class="gift-packaging-body"><figure><img src="media/gifts/gift-boxes.webp" width="720" height="960" loading="lazy" alt="杯子与丝巾的 Style3D 包装盒实拍：蓝色长方盒与深蓝色方盒"><figcaption>杯子与丝巾配套礼盒实拍</figcaption></figure><div><span class="section-index">A GIFT, BEAUTIFULLY WRAPPED</span><h3>让心意，<br>完整抵达。</h3><p>杯子与丝巾配有品牌礼盒。礼盒为对应礼品的包装，不单独计为奖品。</p></div></div></details>
+        <div class="score"><span>评审标准</span><p>品牌契合度 <b>30%</b></p><p>创意与叙事 <b>25%</b></p><p>服装呈现与画面完成度 <b>25%</b></p><p>AI 创作与应用价值 <b>20%</b></p></div>
+      </div>
+    </section>
+
+    <section class="section submit-section" id="submit" aria-labelledby="submit-title">
+      <div class="container">
+        <div class="section-top"><span class="section-index">04 / 提交作品</span><p>YOUR FILM STARTS HERE</p></div>
+        <div class="section-intro"><h2 id="submit-title">你的大片，<br>现在<span>登场。</span></h2><p>填写作品信息，生成邮件草稿，附上视频后发送给活动组。</p></div>
+        <div class="entry-layout">
+          <aside class="entry-notes">
+            <h3>把创意，交给镜头。</h3>
+            <p>视频时长不限，出图须使用 StyleWork。建议以 MP4 格式提交，横竖屏均可。</p>
+            <div class="entry-recipients"><span>活动收件邮箱</span><a href="mailto:xiebingyao@linctex.com">xiebingyao@linctex.com</a><span>抄送</span><a href="mailto:baijie@linctex.com">baijie@linctex.com</a></div>
+            <ol class="entry-notes-list"><li>选择视频，预览并核对文件名称。</li><li>填写品牌、作品名称与创作说明。</li><li>生成邮件草稿，在邮箱中附上视频后发送。</li></ol>
+            <p class="entry-delivery-note">网页不会上传视频。邮件草稿会自动填入作品信息，请在邮箱中添加视频、封面和过程截图。</p>
+          </aside>
+          <form id="entry-form" class="entry-form" aria-describedby="entry-availability">
+            <p id="entry-availability" class="entry-availability" role="status">邮件投稿：收件人 xiebingyao@linctex.com，抄送 baijie@linctex.com。请在邮箱中添加视频后发送。</p>
+            <noscript><p class="entry-availability">请直接用自己的邮箱发送视频、品牌、作品名称及创作说明至 xiebingyao@linctex.com，并抄送 baijie@linctex.com。</p></noscript>
+            <fieldset id="entry-fields">
+              <legend class="sr-only">参赛作品与联系信息</legend>
+              <div class="video-upload" id="video-dropzone">
+                <input id="entry-video" name="video" type="file" accept="video/mp4,video/quicktime,video/webm,.mp4,.mov,.webm" aria-describedby="video-hint video-error">
+                <label for="entry-video"><span class="upload-symbol" aria-hidden="true">▷</span><strong>选择视频预览（选填）</strong><span id="video-hint">MP4 / MOV / WebM · 仅在设备上预览，请在邮件中添加附件</span><span class="choose-video-label">选择视频</span></label>
+              </div>
+              <p id="video-error" class="entry-field-error" role="alert"></p>
+              <div class="selected-video" id="selected-video" hidden><video id="entry-preview" controls playsinline preload="metadata" aria-label="所选参赛视频预览"></video><div><span id="selected-video-name"></span><button type="button" id="remove-video">移除视频</button></div></div>
+              <div class="entry-form-grid">
+                <label>品牌 / 企业名称 <span aria-hidden="true">*</span><input name="brand" required maxlength="80" autocomplete="organization" placeholder="填写品牌或企业名称"></label>
+                <label>作品名称 <span aria-hidden="true">*</span><input name="title" required maxlength="80" placeholder="为你的大片取个名字"></label>
+                <label>联系人 <span aria-hidden="true">*</span><input name="contact" required maxlength="40" autocomplete="name" placeholder="填写姓名"></label>
+                <label>联系邮箱 <span aria-hidden="true">*</span><input name="email" type="email" required maxlength="160" autocomplete="email" placeholder="用于作品联系与结果通知"></label>
+                <label class="entry-full-row">创作方向 <span aria-hidden="true">*</span><select name="track" required><option value="">请选择一个主要方向</option><option>单品主角</option><option>风格穿搭</option><option>品牌故事</option></select></label>
+                <label class="entry-full-row">创作说明 <span aria-hidden="true">*</span><textarea name="description" required maxlength="100" rows="3" placeholder="用 100 字以内，介绍你的品牌创意与创作思路。"></textarea></label>
+                <label>作品封面 <small>选填，1 张</small><input name="cover" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp"></label>
+                <label>StyleWork 创作过程 <small>选填，最多 3 张</small><input name="process" type="file" multiple accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp"></label>
+              </div>
+              <p class="entry-attachment-note">图片支持 JPG / PNG / WebP，单张不超过 10 MB。</p>
+              <label class="entry-confirm"><input type="checkbox" name="confirmed" required><span>我确认出图使用 StyleWork，并同意将本次作品和参赛信息发送到活动邮箱。</span></label>
+            </fieldset>
+            <div id="entry-progress-wrap" class="entry-progress-wrap" hidden><label id="entry-progress-label" for="entry-progress">准备上传…</label><progress id="entry-progress" max="100" value="0"></progress></div>
+            <div id="entry-result" class="entry-result" role="status" aria-live="polite" hidden></div>
+            <div class="entry-form-actions"><button id="entry-submit" class="primary-button" type="submit" disabled>生成投稿邮件 <span aria-hidden="true">↗</span></button><button id="entry-another" class="text-button" type="button" hidden>再提交一支作品 →</button><p>无法唤起邮箱时，可复制邮件内容到常用邮箱发送。</p></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq"><div class="container"><div class="section-top"><span class="section-index">05 / 常见问题</span><p>GOOD TO KNOW</p></div><div class="faq-layout"><h2>开始之前，<br>你可能想知道。</h2><div class="faq-list">
+      <details><summary>谁可以参加？可以参加多个方向吗？</summary><p>建议面向 StyleWork 企业版用户开放，可由个人或品牌团队参赛。每支作品选择一个主要方向，同一团队可提交多个作品。</p></details>
+      <details><summary>活动时间线是怎样的？</summary><p>建议 2026.11.10 启动，11.10—11.28 创作与投稿，11.29—12.03 评审，12.05 公布结果。实际日期待确认。</p></details>
+      <details><summary>需要提交哪些内容？</summary><p>视频长度不限，出图工具必须为 StyleWork。建议提交 MP4 视频、1 张封面、100 字以内创意说明及 1–3 张 StyleWork 创作过程截图。</p></details>
+      <details><summary>评选标准是什么？</summary><p>建议按百分制评审：品牌契合度 30%、创意与叙事 25%、服装呈现与画面完成度 25%、AI 创作与应用价值 20%。</p></details>
+      <details><summary>获奖后可以获得哪些奖励？</summary><p>第 1–3 名：丝巾＋包包，以及企业并发权益 30 天；第 4–10 名：杯子＋小马挂件。杯子和丝巾配有对应礼盒。</p></details>
+      <details><summary>作品提交到哪里？</summary><p>在本页填写作品信息后生成邮件草稿，收件人为 xiebingyao@linctex.com，抄送 baijie@linctex.com。请在邮箱中手动附上视频、封面和过程截图，再点击发送。</p></details>
+    </div></div></div></section>
+
+    <section class="final-section"><div class="container final-inner"><div><span class="section-index">YOUR BRAND. YOUR STORY.</span><h2>让品牌，<br>成为镜头主角。</h2><p>准备好你的作品，在这里提交。</p></div><a href="#submit" class="final-link">提交参赛作品 <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><div class="container footer-inner"><a class="brand" href="#top">Style<span>Work</span><i></i></a><span>FASHION IN MOTION</span></div></footer>
+</body>
+</html>
